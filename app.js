@@ -27,15 +27,26 @@ const list = document.querySelector('#list')
 list.addEventListener('click', e => {
 	if(e.target.tagName === 'SPAN') {
 		e.target.parentElement.remove()
+		saveData()
 	} else if(e.target.tagName === 'LI') {
 		e.target.classList.toggle('checked')
-		}
+		saveData()
+	}
 	}
 )
 
 button__delete.addEventListener('click', () => {
 	list.innerHTML = ''
 })
+
+
+function saveData() {
+	localStorage.setItem('data', list.innerHTML)
+}
+function showTask() {
+	list.innerHTML = localStorage.getItem('data')
+}
+showTask()
 
 
 
