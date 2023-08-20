@@ -47,7 +47,7 @@ body {
 }
 
 .input-box {
-	width: 350px;
+	width: 80%;
 	position: relative;
 	display: flex;
 	align-items: center;
