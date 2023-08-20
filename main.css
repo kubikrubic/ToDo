@@ -60,6 +60,7 @@ body {
 	pointer-events: none;
 	transition: .3s ease;
 	z-index: 2;
+	color: #555;
 }
 
 #input {
