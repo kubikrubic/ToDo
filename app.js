@@ -19,6 +19,7 @@ button__add.addEventListener('click', () => {
 		newIl.appendChild(span)
 		input.value = ""
 	}
+	saveData()
 })
 
 
@@ -37,6 +38,7 @@ list.addEventListener('click', e => {
 
 button__delete.addEventListener('click', () => {
 	list.innerHTML = ''
+	saveData()
 })
 
 
